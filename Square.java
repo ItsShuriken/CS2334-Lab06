@@ -8,7 +8,7 @@
  */ 
 public class Square extends Rectangle
 {
-    /**
+	    /**
      * Constructor. Takes in the sidelength of the square. Remember that a square is a type of
      * rectangle. Thus, a rectangle that is a square has width and height both equal
      * to the sidelength.
@@ -18,7 +18,7 @@ public class Square extends Rectangle
      */
 	public Square(String id, double sidelength)
 	{
-		// TODO: implement this.
+		super(id, sidelength, sidelength);
 	}
 	
 	/**
@@ -29,6 +29,6 @@ public class Square extends Rectangle
 	@Override
 	public String getShapeType()
 	{
-	 // TODO: implement this.
+		return "Square";
 	}
 }

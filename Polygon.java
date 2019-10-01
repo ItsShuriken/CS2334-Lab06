@@ -20,8 +20,11 @@ public abstract class Polygon extends Shape
      */
     public Polygon(String id)
     {
-        // TODO: implement this.
+    	super(id);
+    	sideLengths = new ArrayList<Double>();
     }
+    
+    
     
     /**
      * Calcaulates the perimeter of a polygon. That is, the sum of its side lengths.
@@ -30,6 +33,13 @@ public abstract class Polygon extends Shape
      */
     public double getPerimeter()
     {
-        // TODO: implement this.
+    	double perimeter = 0.0;
+    	for (int i = 0; i < sideLengths.size(); i++) {
+    		perimeter += sideLengths.get(i);
+    	}
+    	return perimeter;
+    	
     }
+
+
 }

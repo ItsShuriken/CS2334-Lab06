@@ -16,6 +16,11 @@ public abstract class Triangle extends Polygon
      */
     public Triangle(String id, double s1, double s2, double s3)
     {
-    	// TODO: implement this.
+    	super(id);
+    	sideLengths.add(s1);
+    	sideLengths.add(s2);
+    	sideLengths.add(s3);
+
+    
     }
 }

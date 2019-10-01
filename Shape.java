@@ -24,7 +24,9 @@ public abstract class Shape implements Comparable<Shape>
         this.id = id;
     }
     
-    // TODO: declare abstract methods.
+    public abstract double getArea();
+    public abstract double getPerimeter();
+    public abstract String getShapeType();
 	
 	/**
 	 * Implementation of the compareTo method derived from "implements Comparable<Shape>"
@@ -112,6 +114,6 @@ public abstract class Shape implements Comparable<Shape>
 	@Override
 	public String toString()
 	{
-	    // TODO: implement this.
+		return String.format("%s\t ID = %s\t area = %.3f\t perimeter = %.3f", getShapeType(), getId(), getPerimeter());
 	}
 }
